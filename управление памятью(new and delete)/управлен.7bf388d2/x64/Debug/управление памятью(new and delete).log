@@ -1,5 +1,5 @@
 ﻿  управление памятью(new and delete).cpp
-C:\Users\79123\OneDrive\Desktop\OOP\Указатели\управление памятью(new and delete)\управление памятью(new and delete).cpp(13,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\79123\OneDrive\Desktop\OOP\Указатели\управление памятью(new and delete)\управление памятью(new and delete).cpp(19,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   управление памятью(new and delete).vcxproj -> C:\Users\79123\OneDrive\Desktop\OOP\Указатели\управление памятью(new and delete)\x64\Debug\управление памятью(new and delete).exe
   "pwsh.exe" не является внутренней или внешней
   командой, исполняемой программой или пакетным файлом.

@@ -9,6 +9,12 @@ class String {
 private:
     char* str;
 public:
+    String() {
+        const char *G = "FGHAf kjgs ihdgs";
+        str = new char[strlen(G)+1];
+        strcpy(str, G);
+
+    }
     String(const char* FF) {
         int a = strlen(FF) + 1;
         str = new char[a];
@@ -32,5 +38,14 @@ int main()
     MMM.display();
     String Azino(GH);
     Azino.display();
+    _getch();
+    //Пытаюсь создать массив из элементов класса
+    int a = 16;
+    String* MN;
+    MN = new String[a];
+    for (int i = 0; i < a; i++) {
+        MN[i].display();
+    }
+    delete[] MN;
     _getch();
 }
