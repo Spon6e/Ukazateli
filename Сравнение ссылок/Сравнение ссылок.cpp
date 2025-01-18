@@ -90,4 +90,11 @@ int main()
     kopiruem(str1, str2);
     cout << str1 << endl << endl;
     _getch();
+    //Создал массив строк у которых не будет оставаться свободного места
+    const char* masstr[7] = { "Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье" };
+    for (int i = 0; i < 7; i++) {
+        cout << masstr[i] << endl;
+    }
+    cout << endl;
+    _getch();
 }
