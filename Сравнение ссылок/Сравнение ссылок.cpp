@@ -1,5 +1,6 @@
 ﻿#include <conio.h>
 #include <iostream>
+#include <locale>
 using namespace std;
 
 void perevod1(double& GG) {
@@ -28,9 +29,16 @@ void obm(int* C1, int* C2) {
         *C2 = temp;
     }
 }
+void kopiruem(char* str1, const char* str2) {
+    while (*str2) {
+        *str1++ = *str2++;
+    }
+    *str1 = '\x0';
+}
 
 int main()
 {
+    setlocale(LC_ALL, "Russian");
     int A1 = 22;
     int A2 = 33;
     cout << &A1 << endl;
@@ -73,5 +81,13 @@ int main()
     for (int i = 0; i < raz; i++) {
         cout << mas[i] << "  ";
     }
+    cout << endl << endl;
+    _getch();
+    //Копирование строк с помощью указателей
+    char str1[55];
+    const char* str2 = "Кручу, кручу, кручу, педали кручу";
+    cout << str2 << endl;
+    kopiruem(str1, str2);
+    cout << str1 << endl << endl;
     _getch();
 }
