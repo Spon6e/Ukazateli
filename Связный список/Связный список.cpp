@@ -20,19 +20,26 @@ public:
         temp->data = peak;
         temp->link = stak;
         stak = temp;
+        //delete[]temp;
     }
     void conclution() {
-        list* temp = stak;
-        while (temp) {
-            cout << temp->data << "\n";
-            temp = temp->link;
+        list* temp1 = stak;
+        while (temp1) {
+            cout << temp1->data << "\n";
+            temp1 = temp1->link;
         }
+        delete[]temp1;
+    }
+    ~linklist() {
+        delete[]stak;
+        cout << "Произошла очистка";
     }
 };
 
 
 int main()
 {
+    setlocale(LC_ALL, "Russian");
     linklist first;
     first.addition(14);
     first.addition(15);
